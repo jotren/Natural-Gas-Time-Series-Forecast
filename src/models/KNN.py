@@ -23,8 +23,8 @@ class KNNTimeSeriesTrainer:
         os.makedirs(os.path.join(directory, "trained-models"), exist_ok=True)
         os.makedirs(os.path.join(directory, "scalers"), exist_ok=True)
         
-        model_filename = f"../{directory}/trained-models/{self.__class__.__name__}_model.joblib"
-        scaler_filename = f"../{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
+        model_filename = f"{directory}/trained-models/{self.__class__.__name__}_model.joblib"
+        scaler_filename = f"{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
         
         joblib.dump(self.model, model_filename)
         joblib.dump(self.scaler, scaler_filename)
@@ -32,8 +32,8 @@ class KNNTimeSeriesTrainer:
         print(f"Scaler saved to {scaler_filename}")
         
     def load_model(self, directory="models"):
-        model_filename = f"../{directory}/trained-models/{self.__class__.__name__}_model.joblib"
-        scaler_filename = f"../{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
+        model_filename = f"{directory}/trained-models/{self.__class__.__name__}_model.joblib"
+        scaler_filename = f"{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
         
         self.model = joblib.load(model_filename)
         self.scaler = joblib.load(scaler_filename)

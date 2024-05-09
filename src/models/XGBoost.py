@@ -27,8 +27,8 @@ class XGBTimeSeriesTrainer:
         os.makedirs(os.path.join(directory, "scalers"), exist_ok=True)
         
         # Generate the filenames using the class name
-        model_filename = f"../{directory}/trained-models/{self.__class__.__name__}_model.joblib"
-        scaler_filename = f"../{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
+        model_filename = f"{directory}/trained-models/{self.__class__.__name__}_model.joblib"
+        scaler_filename = f"{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
         
         # Save the model and scaler
         joblib.dump(self.model, model_filename)
@@ -36,10 +36,10 @@ class XGBTimeSeriesTrainer:
         print(f"Model saved to {model_filename}")
         print(f"Scaler saved to {scaler_filename}")
         
-    def load_model(self, directory="models"):
+    def load_model(self, directory="../models"):
         # Load the model and scaler
-        model_filename = f"../{directory}/trained-models/{self.__class__.__name__}_model.joblib"
-        scaler_filename = f"../{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
+        model_filename = f"{directory}/trained-models/{self.__class__.__name__}_model.joblib"
+        scaler_filename = f"{directory}/scalers/{self.__class__.__name__}_scaler.joblib"
         
         self.model = joblib.load(model_filename)
         self.scaler = joblib.load(scaler_filename)
