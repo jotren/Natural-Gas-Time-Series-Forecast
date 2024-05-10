@@ -79,3 +79,8 @@ The final LSTM model metrics:
 | **Residuals**  | `222`     |
 
 
+## Further Development
+
+## Outliers
+
+## Final Thoughts
