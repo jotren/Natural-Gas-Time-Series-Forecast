@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This project develops an algorithm to predict the natural gas demand in a specific region throughout the year, utilizing publicly available data from the UK's National Grid and weather data from the NOAA (National Oceanic and Atmospheric Administration). The hypothesis is that natural gas demand is predictable, heavily influenced by ambient weather conditions.
+This project develops an algorithm to predict the natural gas demand in a specific region throughout the year, utilising publicly available data from the UK's National Grid and weather data from the NOAA (National Oceanic and Atmospheric Administration). The hypothesis is that natural gas demand is predictable, heavily influenced by ambient weather conditions.
 
 ### Data Sources
 
@@ -21,7 +21,7 @@ By analyzing these datasets, we can model UK gas demand based on various factors
 
 ## Data Exploration
 
-Analysis indicates a direct correlation between weather conditions, specifically air temperature, and natural gas demand in reg in a given day of the yearions like East Anglia. For example, data from 2018-2023 shows a linear relationship between minimum air temperatures and daily gas demand:
+Analysis indicates a direct correlation between weather conditions, specifically air temperature, and natural gas demand. For example, data from the EA (East Anglia Region) from 2018-2023 shows a linear relationship between minimum air temperatures and daily gas demand:
 
 ![Gas Demand vs. Air Temperature](./images/image.png)
 
