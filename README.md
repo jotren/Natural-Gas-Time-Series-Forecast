@@ -1,5 +1,7 @@
 # Time Series Analysis of Gas Demand
 
+![alt text](image.png)
+
 ## Introduction
 
 This project develops an algorithm to predict the natural gas demand in a specific region throughout the year, utilizing publicly available data from the UK's National Grid and weather data from the NOAA (National Oceanic and Atmospheric Administration). The hypothesis is that natural gas demand is predictable, heavily influenced by ambient weather conditions.
