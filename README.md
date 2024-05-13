@@ -1,6 +1,6 @@
 # Time Series Analysis of Gas Demand
 
-![alt text](image.png)
+![alt text](./images/image-3.png)
 
 ## Introduction
 
